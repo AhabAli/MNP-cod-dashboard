@@ -679,9 +679,6 @@ span.circle img {
 }
 
 
-.main-menu.menu-light .navigation>li.open>a {
-    background: #b41e22
-}
 
 .main-menu.menu-light .navigation>li.open {
     border: 4px #ec5a26 !important
@@ -1198,6 +1195,10 @@ body.vertical-layout.vertical-menu.menu-collapsed .navbar .navbar-header ul.nav.
 }
 
 /********MNP STYLING***************/
+.main-menu.menu-light .navigation>li.open>a {
+    background: transparent;
+}
+
 html body .pace .pace-progress {
     background: #f46711 !important;
 }
@@ -2893,10 +2894,6 @@ span.circle img {
     font-size: 35px;
     text-transform: uppercase;
     font-weight: 500
-}
-
-.main-menu.menu-light .navigation>li.open>a {
-    background: #ffffff;
 }
 
 .main-menu.menu-light .navigation>li.open {
