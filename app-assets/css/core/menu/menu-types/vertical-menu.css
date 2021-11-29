@@ -38,7 +38,7 @@ body.vertical-layout.vertical-menu.menu-expanded .navbar .navbar-brand .brand-te
 }
 
 body.vertical-layout.vertical-menu.menu-expanded .main-menu {
-  width: 130px !important;
+  width: 60px !important;
   transition: 300ms ease all;
   backface-visibility: hidden;
 }
@@ -82,7 +82,7 @@ body.vertical-layout.vertical-menu.menu-expanded .main-menu .main-menu-footer {
 
 body.vertical-layout.vertical-menu.menu-expanded .content,
 body.vertical-layout.vertical-menu.menu-expanded .footer {
-  margin-left: 130px;
+  margin-left: 60px;
 }
 
 body.vertical-layout.vertical-menu.menu-expanded .navbar-brand-center .content,

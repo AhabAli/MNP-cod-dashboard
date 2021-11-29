@@ -1,9 +1,13 @@
-h6.media-heading {
-    color: #b41e22
-}
-
-.bg-cyan {
-    background: #b41e22 !important
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+p,
+a {
+    font-family: 'Poppins' !important;
 }
 
 .header-navbar .navbar-container ul.nav li .scrollable-container a {
@@ -17,8 +21,6 @@ span.user-name {
     font-size: 22px;
     font-weight: 100;
 }
-
-
 
 .all-notifications .notification-title {
     padding: 20px 50px;
@@ -74,16 +76,7 @@ img.brand-logo.img-fluid {
 
 
 
-.navbar-nav a.dropdown-item {
-    background: #f4f4f4;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    padding-top: 20px !important;
-    padding-bottom: 18px !important;
-    text-transform: capitalize;
-    color: #999;
-    font-size: 14px
-}
+
 
 .navbar-nav .dropdown-menu-right {
     border-radius: 10px
@@ -1270,7 +1263,8 @@ h1.menuIdentity span {
     display: block;
 }
 
-.grey-badge>a {
+.grey-badge>a,
+.grey-badge>div>a {
     width: 40px;
     height: 40px;
     display: flex !important;
@@ -1279,7 +1273,7 @@ h1.menuIdentity span {
     border-radius: 50%;
     background: #2f2e34;
     position: relative;
-    color: #fff;
+    color: #fff !IMPORTANT;
     font-size: 20px;
 }
 
@@ -1475,7 +1469,7 @@ p.mnp-text {
     color: #939394;
     font-weight: 100;
     line-height: 1.5;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .mnp-badge {
@@ -1726,6 +1720,10 @@ li.social-item a i::before {
     font-size: 22px !important;
 }
 
+.navbar-expand-md .navbar-nav .dropdown-menu {
+    left: -120px !important;
+}
+
 /***********RESPONSIVE*************/
 @media screen and (max-width: 1440px) and (min-width: 1280px) {
     .cards-row .col-xl-3 {
@@ -1807,7 +1805,7 @@ li.social-item a i::before {
 
 @media (max-width:1199px) {
     .search-bar.navbar-nav input {
-        width: 160px;
+        width: 240px;
     }
 
     .box {
@@ -1895,11 +1893,20 @@ li.social-item a i::before {
 }
 
 @media (max-width: 999px) {
+    #navbar-mobile.navbar-collapse .navbar-nav li:first-child {
+        flex-basis: 100%;
+    }
+
+    html body .content .content-wrapper {
+        margin: 55px 10px 20px !important;
+    }
+
     #navbar-mobile .notification-container.show {
         position: absolute;
         left: 50% !important;
         width: 300px !important;
         transform: translateX(-50%);
+        margin: 10px 0 0 !important;
     }
 
     .mnp-media {
@@ -2007,11 +2014,6 @@ li.social-item a i::before {
         color: #f46711;
     }
 
-    i.fa.fa-ellipsis-v {
-        float: right;
-        margin: 0
-    }
-
     .pro-main {
         padding: 20px 20px 130px 20px !important
     }
@@ -2022,6 +2024,11 @@ li.social-item a i::before {
 }
 
 @media (max-width:576px) {
+    .header-navbar .navbar-container .show .dropdown-menu {
+        width: 200px;
+        margin: -10px auto 0;
+    }
+
     h2.helloHeading {
         text-align: center;
         margin-bottom: 20px;
@@ -2227,17 +2234,6 @@ body::-webkit-scrollbar {
 body::-webkit-scrollbar-thumb {
     border-radius: 100px;
     background-color: #f46711;
-}
-
-.navbar-nav a.dropdown-item {
-    background: #f4f4f4;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    padding-top: 20px !important;
-    padding-bottom: 18px !important;
-    text-transform: capitalize;
-    color: #999;
-    font-size: 14px;
 }
 
 .navbar-nav .dropdown-menu-right {
@@ -2459,7 +2455,7 @@ i.ft-menu {
 
 html body .content .content-wrapper {
     padding: 3rem 3rem 5rem;
-    margin: 55px 30px 30px 0;
+    margin: 55px 30px 30px 10px;
     background: #232228;
     border-radius: 20px;
 }
@@ -2969,7 +2965,7 @@ ul {
 }
 
 .search-bar {
-    padding: 10px 0 0 0;
+    padding: 0px 0 0 0;
     height: 100%;
     display: flex;
     align-items: center;
@@ -4814,6 +4810,7 @@ h4.s-heading {
 
     .header-navbar .navbar-nav .open-navbar-container {
         margin-right: 10px;
+        padding: 0;
     }
 
     .navbar-light .navbar-header .navbar-nav .nav-link,
@@ -4966,7 +4963,6 @@ h4.s-heading {
 
 
     i.fa.fa-ellipsis-v {
-        float: right;
         margin: 0 0 0 0;
     }
 
@@ -5195,10 +5191,6 @@ h4.s-heading {
         padding: 30px 10px;
     }
 
-    html body .dashboard .content-wrapper {
-        padding-left: 15px !important;
-        padding-right: 15px !important;
-    }
 
     .dashboard .chart-box.box {
         min-height: auto;

@@ -5,7 +5,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
-    <title>MNP COD Portal - Dashboard</title>
+    <title>Client Portal Dashboard</title>
     <link rel="shortcut icon" href="assets/images/favicon.ico" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -53,46 +53,33 @@
             <div class="navbar-container content">
                 <div class="collapse navbar-collapse" id="navbar-mobile">
                     <div class="row">
-                        <div class="col-12 d-flex align-items-center justify-content-around">
+                        <div class="col-12 d-flex align-items-center justify-content-between">
                             <div class="menuText">
                                 <h1 class="menuIdentity">Customer <span>Portal</span><span>.</span></h1>
                             </div>
-                            <div class="dropdown">
-                                <button class="user-dropdown" type="button" id="dropdownMenuButton"
-                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <span class="avatar avatar-online">
-                                        <img src="app-assets/images/portrait/small/avatar-s-1.png" alt="avatar">
-                                    </span>
-                                    <span class="user-name">Hi Namsil </span><i
-                                        class="fas fa-angle-down text-white"></i>
-                                </button>
-                                <div class="dropdown-menu user-menu" aria-labelledby="dropdownMenuButton">
-                                    <a class="dropdown-item" href="#">Action</a>
-                                    <a class="dropdown-item" href="#">Another action</a>
-                                    <a class="dropdown-item" href="#">Something else here</a>
-                                </div>
-                            </div>
-                            <div class="nav navbar-nav search-bar">
-                                <form action="">
-                                    <div class="row align-items-center">
-                                        <div class="col-12">
-                                            <input type="search" placeholder="Your order number info..."
-                                                class="form-control">
-                                            <button type="submit" class="search-btn"><img
-                                                    src="assets/images/searchbar-button.png" class="img-fluid"
-                                                    alt=""></button>
-                                        </div>
+                            <ul class="nav navbar-nav d-flex justify-content-end align-items-center pr-2">
+                                <li class="mb-lg-0 mb-2">
+                                    <div class="nav navbar-nav search-bar">
+                                        <form action="">
+                                            <div class="row align-items-center">
+                                                <div class="col-12">
+                                                    <input type="search" placeholder="Your order number info..."
+                                                        class="form-control">
+                                                    <button type="submit" class="search-btn"><img
+                                                            src="assets/images/searchbar-button.png" class="img-fluid"
+                                                            alt=""></button>
+                                                </div>
+                                            </div>
+                                        </form>
                                     </div>
-                                </form>
-                            </div>
-                            <ul class="nav navbar-nav d-flex justify-content-end align-items-center">
-                                <li class="dropdown dropdown-notification nav-item grey-badge mr-xl-3 mr-2"> <a
-                                        class="nav-link nav-link-label" href="#" data-toggle="dropdown"><i
+                                </li>
+                                <li class="dropdown dropdown-notification nav-item grey-badge mx-2">
+                                    <a class="nav-link nav-link-label" href="#" data-toggle="dropdown"><i
                                             class="far fa-envelope"></i> <span
                                             class="badge badge-pill badge-default badge-danger badge-default badge-up">5</span>
                                     </a>
-                                    <ul
-                                        class="dropdown-menu dropdown-menu-media dropdown-menu-right notification-container">
+                                    <ul class="dropdown-menu dropdown-menu-media dropdown-menu-right
+                                        notification-container">
                                         <li class="notif-scroll-body">
                                             <a href="javascript:void(0)">
                                                 <div class="notification-block">
@@ -128,8 +115,18 @@
                                     </ul>
                                 </li>
                                 <li class="grey-badge">
-                                    <a href="javascript:void(0)" class="nav-link nav-link-label"><i
-                                            class="far fa-user-circle"></i></a>
+                                    <div class="dropdown">
+                                        <a class="user-dropdown" type="button" id="dropdownMenuButton"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="far fa-user-circle"></i>
+                                        </a>
+                                        <div class="dropdown-menu user-menu" aria-labelledby="dropdownMenuButton">
+                                            <a class="dropdown-item" href="#">View Profile</a>
+                                            <a class="dropdown-item" href="#">Logout</a>
+                                        </div>
+                                    </div>
+                                    <!-- <a href="javascript:void(0)" class="nav-link nav-link-label"><i
+                                            class="far fa-user-circle"></i></a> -->
                                 </li>
                             </ul>
                         </div>
@@ -195,16 +192,16 @@
                     <div class="row mb-4">
                         <div class="col-12 d-flex justify-content-between align-items-center flex-column flex-lg-row">
                             <h2 class="helloHeading">Gull Ahmed <span>Textile</span><span>.</span></h2>
-                            <div class="dashboard search-bar">
-                                <form action="">
-                                    <div class="row align-items-center">
-                                        <div class="col-12">
-                                            <input type="search" placeholder="Search" class="form-control">
-                                            <button type="submit" class="search-btn"><img src="images/magnify.png"
-                                                    class="img-fluid" alt=""></button>
-                                        </div>
-                                    </div>
-                                </form>
+                            <div class="dropdown">
+                                <button class="user-dropdown" type="button" id="filter_1" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                    <img src="images/filter.png" alt="filter">
+                                </button>
+                                <div class="dropdown-menu user-menu" aria-labelledby="filter_1">
+                                    <a class="dropdown-item" href="#">Accounts</a>
+                                    <a class="dropdown-item" href="#">COD</a>
+                                    <a class="dropdown-item" href="#">Retail</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -361,7 +358,7 @@
                                 <div
                                     class="d-flex justify-content-between align-items-center flex-column flex-lg-row mb-2">
                                     <h2 class="helloHeading">Shipper <span>Advice</span></h2>
-                                    <div class="dashboard search-bar">
+                                    <!-- <div class="dashboard search-bar">
                                         <form action="">
                                             <div class="row align-items-center">
                                                 <div class="col-12">
@@ -371,7 +368,7 @@
                                                 </div>
                                             </div>
                                         </form>
-                                    </div>
+                                    </div> -->
                                 </div>
                                 <div class="row no-gutters">
                                     <div class="col-12">
