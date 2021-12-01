@@ -1223,12 +1223,34 @@ h3.heading-3 {
     color: #fff;
 }
 
+.dropdown.abs-drop {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+}
+
+ul.cod-circles li:nth-child(2) .c100,
+ul.cod-circles li:nth-child(3) .c100 {
+    font-size: 120px !important;
+}
+
 .ln-2 {
     line-height: 2 !important;
 }
 
 .c100.big {
-    font-size: 120px !important;
+    font-size: 140px !important;
+}
+
+.c100 .fill {
+    /* border-color: red !important; */
+}
+
+.c100 .bar,
+.c100 .fill {
+    transition: 1s transform ease-in !important;
+    /* z-index: 9999;
+    background: red !important; */
 }
 
 h1.menuIdentity {
@@ -1513,6 +1535,20 @@ ul.cod-circles:after {
 
 ul.cod-circles li {
     position: relative;
+}
+
+ul.cod-circles li .c100 {
+    animation: grow_in 1s forwards ease-in;
+}
+
+@keyframes grow_in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 ul.cod-circles li:after {
